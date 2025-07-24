@@ -31,4 +31,8 @@
 |  |
 | ------- |
 | [0023-merge-k-sorted-lists](https://github.com/subhamsharrma/Competitive-Coding-/tree/master/0023-merge-k-sorted-lists) |
+## String
+|  |
+| ------- |
+| [0038-count-and-say](https://github.com/subhamsharrma/Competitive-Coding-/tree/master/0038-count-and-say) |
 <!---LeetCode Topics End-->
