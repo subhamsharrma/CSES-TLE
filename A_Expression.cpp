@@ -17,7 +17,7 @@
 
 
 
-#include<iostream>
+#include<bits/stdc++.h>
 using namespace std ;
 
 int main () {
@@ -29,6 +29,7 @@ int main () {
     int sum = (a + b ) * c ;
     
     
-    cout << max ( max ( sum3 , sum2 ) , max ( sum1 , sum ) ) << endl ;
+    cout << max({a + b + c, a * b * c, (a + b) * c, a * (b + c), a + b * c, a * b + c}) << endl;
+
     return 0 ;  
 }
