@@ -14,14 +14,14 @@ public:
 };
 
 int main() {
-    vector<int> arr = {2, 5, 8, 7};
+    vector<int> arr = {2, 5, 12, 7};
     
     /*Assigning values to 
     the nodes*/
     Node* y1 = new Node(arr[0], nullptr);
     Node* y2 = new Node(arr[1], nullptr);
     Node* y3 = new Node(arr[2], nullptr);
-    Node* y4 = new Node(arr[3], nullptr);
+    Node* y4 = new Node(arr[3],  nullptr);
 
     /**Linking of
      * Nodes*/
