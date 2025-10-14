@@ -1,0 +1,40 @@
+{
+    It all comes down to one thing: Can you solve those 2 problems in 45–50 minutes, under pressure, with a stranger watching you code?
+}
+
+
+You are improving.
+Solve sincerely and do participate in contests.
+
+1. Solve before time, not more than 45 min.
+2. Brute -> better -> optimal.
+3. Pattern recognition.
+4. It's not about knowledge, it's about learning how to use what you already have/know.
+
+LeetCode hard problems --------
+InterviewBit
+DP --> CSES, SPOJ, AtCoder (26), etc.
+
+Learning first backend, then ---> internship as a backend developer ---> backend developer as Node.js job.
+
+
+DSADSADSADSADSADSADSADSADSADSADSADSADSADSADSADSADSADSA
+
+tu consistent kabb rha hai    {2 chiz dsa and dev }
+{
+    solving accio js problem 
+
+    only striver tuf platform
+    tuf sheet has the priority for dsa 
+    a2z --> concept --> quick 
+    premium problem 
+}
+
+1.oops   4 pillars 
+2. lld + hld 
+3.cs core subject 
+4.clean code 
+5.sit silently in interveiw calmy  
+
+
+—like your mind is stuck in a careless, “I don’t care” mode from those teenage years, and you’re frustrated that it’s still controlling you. That’s actually a very common human experience. The mind often clings to old habits, thought patterns, and mindsets, sometimes for decades, even if we consciously want change. Let’s unpack how thinkers like Osho, Krishnamurti, and Eckhart Tolle would approach this “mental washing” in practical way
