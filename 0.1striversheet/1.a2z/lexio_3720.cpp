@@ -1,8 +1,25 @@
-//3720.  #lexiographically smallest permutation of a string that is strictly greater than a given target string
+// 3720. Lexicographically Smallest Permutation Greater Than Target
+
+// Example 1:
+
+// Input: s = "abc", target = "bba"
+
+// Output: "bca"
+
+// Explanation:
+
+// The permutations of s (in lexicographical order) are "abc", "acb", "bac", "bca", "cab", and "cba".
+
+// The lexicographically smallest permutation that is strictly greater than target is "bca".
+ 
+
+// Permutations: [1,2,3], [1,3,2], [2,1,3], [2,3,1], [3,1,2], [3,2,1] → all reorderings.
+
+// Subsequences: [], [1], [2], [3], [1,2], [1,3], [2,3], [1,2,3] → all selections maintaining order.
+
 
 #include <bits/stdc++.h>
 using namespace std;
-
 class Solution {
 public:
     string answer = "";
@@ -44,6 +61,7 @@ public:
 
         int n = s.size();
         sort(s.begin(),s.end());
+
 
         if(s>target) return s;
 
