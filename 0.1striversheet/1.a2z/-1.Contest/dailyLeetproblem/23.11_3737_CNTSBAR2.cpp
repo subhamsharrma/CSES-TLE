@@ -1,4 +1,7 @@
 // count subarray with majority element iii 
+// link: https://leetcode.com/problems/count-subarrays-with-majority-element-ii/
+
+// FENWICK TREE / BIT APPROACH
 
 #include <bits/stdc++.h>
 using namespace std;

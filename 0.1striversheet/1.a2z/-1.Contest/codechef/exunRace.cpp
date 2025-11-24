@@ -6,6 +6,7 @@ int main() {
     cin.tie(NULL);
 
     int T;
+    
     cin >> T;            
 
     while (T--) {

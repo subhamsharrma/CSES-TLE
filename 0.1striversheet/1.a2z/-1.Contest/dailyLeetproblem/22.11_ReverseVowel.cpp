@@ -1,4 +1,5 @@
 // 345.  reverse vowel of a string
+// link: https://leetcode.com/problems/reverse-vowels-of-a-string/
 
 #include <bits/stdc++.h>
 using namespace std;

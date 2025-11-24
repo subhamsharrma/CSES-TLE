@@ -1,5 +1,5 @@
 //3720.  #lexiographically smallest permutation of a string that is strictly greater than a given target string
-
+// link: https://leetcode.com/problems/lexicographically-smallest-permutation-of-a-string-that-is-strictly-greater-than-a-given-target-string/
 #include <bits/stdc++.h>
 using namespace std;
 
