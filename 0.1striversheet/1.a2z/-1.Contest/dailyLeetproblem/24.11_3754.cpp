@@ -1,12 +1,50 @@
-// 
+// 3754. Concatenate Non-Zero Digits and Multiply by Sum I
+// https://leetcode.com/problems/concatenate-non-zero-digits-and-multiply-by-sum-i/
+
 #include <bits/stdc++.h>
 using namespace std;
 
-int main() {
-    int a = 10; // Binary: 1010
-    int b = 12; // Binary: 1100
-    int result = a ^ b; // Performs bitwise XOR
+class Solution
+{
+public:
+    long long concatenatedValue(int num)
+    {
 
-    cout << "The result of " << a << " XOR " << b << " is: " << result <<  endl;
+        vector<int> digitss;
+        while (num > 0)
+        {
+            int digit = num % 10;
+
+            if (digit != 0)
+            {
+                digitss.push_back(digit);
+            }
+
+            num /= 10;
+        }
+
+        if (digitss.empty())
+            return 0;
+
+        reverse(digitss.begin(), digitss.end());
+
+        int total = accumulate(digitss.begin(), digitss.end(), 0);
+
+        string s;
+        for (int num : digitss) {
+            s += to_string(num) ;
+            
+        }
+
+        long long concatenated = stoll(s);
+
+        return total * concatenated;
+    }
+};
+int main()
+{
+    Solution sol;
+    int nums = 10203004;
+    cout << sol.concatenatedValue(nums) << endl;
     return 0;
 }
