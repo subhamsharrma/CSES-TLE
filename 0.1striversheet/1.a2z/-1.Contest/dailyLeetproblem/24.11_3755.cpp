@@ -63,27 +63,38 @@
 // follow up checking evenandoddIS_Equal or not 
 #include <bits/stdc++.h>
 using namespace std;
+
 class Solution {
 public:
-    int balanced(vector<int> nums) {
-        int evenandoddIS_Equal = 0 ; 
-        for (int i = 0 ; i < nums.size() ; i++){
-            if (nums[i] % 2 == 0) evenandoddIS_Equal++ ;
-            else evenandoddIS_Equal-- ;
-        }
-        return evenandoddIS_Equal == 0 ;
+    bool balanced(const vector<int>& nums) {
+        int balance = 0;
 
+        for (int x : nums) {
+            if (x % 2 == 0) balance++;
+            else balance--;
+        }
+        // DRY RUN 
+        // For nums = {3, 1, 3, 2, 0}
+        // balance starts at 0
+        // 3 is odd, balance = -1
+        // 1 is odd, balance = -2
+        // 3 is odd, balance = -3
+        // 2 is even, balance = -2
+        // 0 is even, balance = -1
+
+        return balance ? false : true;        // alternate 
+        // return balance ? false : true;
     }
 };
 
-int main () {
+int main() {
     Solution sol;
-    vector<int> nums = {3, 1, 3, 2, 0};
-    if(sol.balanced(nums) == 0) {
-        cout << "Balance is there" ;
-    }
-    else {
-        cout << "Balance is not there" ;
+    vector<int> nums = {3,  3, 2, 0}; // even = 2, odd = 2
+
+    if (sol.balanced(nums)) {
+        cout << "Balance is there";
+    } else {
+        cout << "Balance is not there";
     }
     return 0;
 }
