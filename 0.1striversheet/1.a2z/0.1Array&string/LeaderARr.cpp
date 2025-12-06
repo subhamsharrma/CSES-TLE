@@ -2,33 +2,31 @@
 #include<bits/stdc++.h>
 using namespace std;
 
- class Solution {
-   public:
-    vector<int> leaders(int arr[], int n) {
-        int last = arr[n - 1];
-        vector<int> ans;
-        
-        
-        ans.push_back(last);
-        for (int i = n - 2; i >= 0; i--) {
-            if (arr[i] >= last) {
-                ans.push_back(arr[i]);
-                last = arr[i];
+class Solution {
+public:
+    vector<int> printprifixOnly(vector<int>& nums, int target) {
+        vector<int> prefix(nums.size());
+
+        prefix[0] = nums[0];   // first stays same
+
+        for(int i = 1; i < nums.size(); i++){
+            prefix[i] = prefix[i-1] + nums[i]; 
+        }
+        for(int i = 0; i < nums.size(); i++){
+            if(prefix[i] == target){
+                cout << "Found at index: " << i << endl;
             }
         }
-        reverse(ans.begin(), ans.end());
-        return ans;
+        
     }
- };
-int main() {
-    
-    int arr[] = {16, 17, 4, 3, 5, 2};
-    int n = sizeof(arr) / sizeof(arr[0]);
+};
 
-    Solution obj;
-    vector<int> res = obj.leaders(arr, n);
-    for (auto x : res) {
-        cout << x << " ";
-    }
+int main() {
+    Solution sol;
+    vector<int> nums = {2, 7, 11, 15};
+    int target = 9;
+    vector<int> result = sol.printpri
+    fixOnly(nums, target);
+    
     return 0;
 }
