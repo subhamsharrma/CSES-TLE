@@ -64,7 +64,7 @@ public:
         }
         //'solved'
 
-        return {duplicate, missing};
+        return {duplicate, missing} ;
     }
 };
 // class Solution {
