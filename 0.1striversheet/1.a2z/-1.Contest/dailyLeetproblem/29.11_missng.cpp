@@ -87,3 +87,28 @@ public:
 //         return {duplicate, missing};
 //     }
 // };
+
+#include <iostream>
+#include <dirent.h>
+using namespace std;
+
+int main() {
+    DIR* dir;
+    struct dirent* entry;
+    int count = 0;
+
+    dir = opendir("E:/NiruPhonePic");
+    if (dir == NULL) {
+        cout << "Directory not found\n";
+        return 0;
+    }
+
+    while ((entry = readdir(dir)) != NULL) {
+        if (entry->d_type == DT_REG) { // regular file
+            count++;
+        }
+    }
+
+    closedir(dir);
+    cout << "Total files: " << count << endl;
+}
