@@ -42,7 +42,7 @@ int main() {
     Solution sol;   // object creation (THIS is how)
 
     vector<int> arr1 = {1, 3};
-    vector<int> arr2 = {2, 4};
+    vector<int> arr2 = {2, 4,5};
 
     double ans = sol.median(arr1, arr2);
 
