@@ -30,10 +30,16 @@ using namespace std  ;
 class Soltution {
     public:
     int evalRPN(vector<string>& tokens) {
-        
-        int left = 0 ; 
-        int left_1 = left+1 ; 
-        
+        stack<int> st ; 
+        for (auto &t : token ) {
+            if(t = "+" || t = "*" || t = "-" || t = "/"   ) {
+                int a = st.top() , st.pop() ; 
+                int b = st.top() , st.pop() ; 
+
+                if(t == "+" ) st.push_back(a+b) ; 
+                else if()
+            }
+        }
 
 
     }
