@@ -38,7 +38,7 @@ int main() {
     FindClose(hFind);
 
     std::cout << "-------------------- -------" << std::endl;
-    std::cout << "Total Resume PDFs: " << resumeCount << std::endl;
+    std::cout << "Total Resume PDFs: " << resumeCount endl;
 
     return 0;
 }
