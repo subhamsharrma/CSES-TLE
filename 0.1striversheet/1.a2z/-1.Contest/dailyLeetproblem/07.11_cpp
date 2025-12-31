@@ -1,1 +1,17 @@
 !!!
+lorem 22
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main() {
+    ifstream file("data.txt");   // open file
+
+    string line;
+    while (getline(file, line)) {
+        cout << line << endl;    // read line by line
+    }
+
+    file.close();               // close file
+    return 0;
+}
