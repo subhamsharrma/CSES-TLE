@@ -26,6 +26,8 @@
 
 
 // Using PQ 
+#include<bits/stdc++.h> 
+using namespace std ; 
 class Solution {
 public:
     int lastStoneWeight(vector<int>& stones) {
@@ -45,3 +47,11 @@ public:
     }
 };
 
+int main () {
+    Solution sol ; 
+    vector<int> stones = {2,3,4,653,2,2,24}  ;
+
+    cout << sol.lastStoneWeight(stones) ; 
+    return 0 ; 
+
+}
