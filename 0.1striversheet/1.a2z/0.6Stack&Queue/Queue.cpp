@@ -105,3 +105,44 @@ int main() {
     cout << ans << endl ;
     return 0 ;
 }
+
+
+
+// using Queue 
+#include<bits/stdc++.h>
+using namespace std ; 
+
+class Solution {
+public:
+    int countStudents(vector<int>& students, vector<int>& sandwiches) {
+        queue<int> q;
+        for (int s : students) q.push(s);
+
+        int i = 0;          // index for sandwiches (top)
+        int rotations = 0;  // count of failed matches
+
+        while (!q.empty() && rotations < q.size()) {
+            if (q.front() == sandwiches[i]) {
+                q.pop();        // student eats
+                i++;            // next sandwich
+                rotations = 0;  // reset because someone ate
+            } else {
+                q.push(q.front()); // move student to back
+                q.pop();
+                rotations++;
+            }
+        }
+
+        return q.size(); // students unable to eat
+    }
+};
+
+int main() {
+    Solution sol ;
+    vector<int> student = {1,1,0,0}; 
+    vector<int> sandwich = {0,1,0,1}; 
+
+    int ans = sol.countStudents(student , sandwich ) ;
+    return 0 ; 
+     
+}
