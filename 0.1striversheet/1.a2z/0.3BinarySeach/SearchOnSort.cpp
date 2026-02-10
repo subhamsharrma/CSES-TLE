@@ -1,21 +1,19 @@
-#include<iostream>
-using namespace std ; 
+#include<bits/stdc++.h>
+using namespace std;
 
-int main () {
-    int t  ; 
+int main()
+{
+    int t ; 
+    
     while(t--) {
-        int n ; 
-        if(n % 3 == 0 || n % 2 == 0 ) cout << "0" << endl ; 
-        else {
-            int ans = n % 3 ; 
-            cout << ans + 2 << endl ; 
-        }
+        int n ;
+        vector<int> Vec(n) ;
+        int big = INT_MIN ;  
+        for (int i = 0 ; i < n ; i++) {
+            cin >> Vec[i] ;
+            big = max(big , Vec[i]) ;  
+        } 
+        cout << big * n << endl ; 
+        
     }
 }
-//adding nothing 
-//adding nothing (1)
-//adding nothing (2)
-//adding nothing (3)
-
-
-
