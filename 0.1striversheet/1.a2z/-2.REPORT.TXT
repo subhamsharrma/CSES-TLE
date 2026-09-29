@@ -24,7 +24,7 @@ Two Pointers .
 Fast–Slow Pointers sequences.
 Prefix Sum  .
 HashMap/Counting lookups.
-Stack/Monotonic Stack .
+Stack/Monotonic Stack . 
 Binary Search monotonic space.
 Binary Search on Answer 
 Backtracking 
